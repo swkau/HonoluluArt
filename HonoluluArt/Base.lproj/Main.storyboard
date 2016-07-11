@@ -16,11 +16,26 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HXz-sn-Lhu">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HXz-sn-Lhu" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Mww-mK-Ygf"/>
+                            <constraint firstAttribute="trailing" secondItem="HXz-sn-Lhu" secondAttribute="trailing" id="X44-Q4-gSX"/>
+                            <constraint firstItem="HXz-sn-Lhu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xst-5h-Aw4"/>
+                            <constraint firstItem="HXz-sn-Lhu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yUz-AN-r8E"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="HXz-sn-Lhu" id="gFU-S6-uBS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="380" y="337"/>
         </scene>
     </scenes>
 </document>
