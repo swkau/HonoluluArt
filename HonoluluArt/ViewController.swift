@@ -13,6 +13,7 @@ import CoreLocation
 
 class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate
 {
+    var center = ""
     @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager()
     
@@ -24,25 +25,34 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()
+        self.mapView.showsScale = true
+        self.mapView.showsCompass = true
+        self.mapView.showsTraffic = true
+        self.mapView.showsBuildings = true
+        self.mapView.showsPointsOfInterest = true
         self.mapView.showsUserLocation = true
         
+    }
+    
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+
+        let location = locations.last
         
-        // MARK: - Location Delegate Methods
-        func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-            
-            let location = locations.last
-            
-            let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
-            
-            let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
-            
-            self.mapView.setRegion(region, animated: true)
-            
-            self.locationManager.stopUpdatingLocation()
-            
-        }
+        let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
         
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.006, longitudeDelta: 0.006))
+        
+        self.mapView.setRegion(region, animated: true)
+        
+        self.locationManager.stopUpdatingLocation()
         
     }
+
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        
+        print("Errors: " + error.localizedDescription)
+    }
+    
         
 }
