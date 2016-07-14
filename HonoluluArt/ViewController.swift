@@ -32,6 +32,14 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         self.mapView.showsPointsOfInterest = true
         self.mapView.showsUserLocation = true
         
+        // show art_ork on map
+        let laundrymart = Amenities(title: "King David Kalakaua",
+                              locationName: "Waikiki Gateway Park",
+                              discipline: "Sculpture",
+                              coordinate: CLLocationCoordinate2D(latitude: 1, longitude: 104))
+        
+        mapView.addAnnotation(laundrymart)
+        
     }
     
     
