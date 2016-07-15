@@ -15,7 +15,6 @@
 		B97D71001D36443000FFB5AD /* PublicArt.json in Resources */ = {isa = PBXBuildFile; fileRef = B97D70FF1D36443000FFB5AD /* PublicArt.json */; };
 		B97D71061D376EEA00FFB5AD /* Amenities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D71051D376EEA00FFB5AD /* Amenities.swift */; };
 		B97D71081D37831F00FFB5AD /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D71071D37831F00FFB5AD /* VCMapView.swift */; };
-		B97D710A1D378EA500FFB5AD /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97D71091D378EA500FFB5AD /* JSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		B97D70FF1D36443000FFB5AD /* PublicArt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PublicArt.json; sourceTree = "<group>"; };
 		B97D71051D376EEA00FFB5AD /* Amenities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Amenities.swift; sourceTree = "<group>"; };
 		B97D71071D37831F00FFB5AD /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
-		B97D71091D378EA500FFB5AD /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +65,6 @@
 				B9461F991D33762E0088F64B /* ViewController.swift */,
 				B97D71071D37831F00FFB5AD /* VCMapView.swift */,
 				B97D71051D376EEA00FFB5AD /* Amenities.swift */,
-				B97D71091D378EA500FFB5AD /* JSON.swift */,
 				B9461F9B1D33762E0088F64B /* Main.storyboard */,
 				B9461F9E1D33762E0088F64B /* Assets.xcassets */,
 				B9461FA01D33762E0088F64B /* LaunchScreen.storyboard */,
@@ -158,7 +155,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B97D71081D37831F00FFB5AD /* VCMapView.swift in Sources */,
-				B97D710A1D378EA500FFB5AD /* JSON.swift in Sources */,
 				B97D71061D376EEA00FFB5AD /* Amenities.swift in Sources */,
 				B9461F9A1D33762E0088F64B /* ViewController.swift in Sources */,
 				B9461F981D33762E0088F64B /* AppDelegate.swift in Sources */,

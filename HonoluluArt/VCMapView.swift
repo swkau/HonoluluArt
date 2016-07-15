@@ -7,9 +7,10 @@
 //
 
 import Foundation
+
 import MapKit
 
-extension ViewController {
+extension ViewController: MKMapViewDelegate {
     
     // 1
     func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
